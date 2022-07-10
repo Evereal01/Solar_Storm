@@ -1,0 +1,49 @@
+##############
+# SOLAR STORM
+##############
+
+component_set = {
+	key = "ARMOR_7"
+	
+	icon = "GFX_ship_part_armor_7"
+	icon_frame = 1	
+}
+
+########################
+# AP ETERNAL VIGILANCE
+########################
+
+component_set = {
+	key = "ETERNAL_VIGILANCE_ARMOUR"
+	
+	icon = "GFX_ship_part_ev_armour"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ETERNAL_VIGILANCE_HULL"
+	
+	icon = "GFX_ship_part_ev_hull"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ETERNAL_VIGILANCE_SHIELD"
+	
+	icon = "GFX_ship_part_ev_shield"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ETERNAL_VIGILANCE_HELLFIRE"
+	
+	icon = "GFX_ship_part_ev_hellfire"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ETERNAL_VIGILANCE_COMPUTER"
+	
+	icon = "GFX_ship_part_ev_computer"
+	icon_frame = 1
+}

@@ -1,0 +1,19 @@
+objectTypes = {
+
+	##############
+	# SOLAR STORM
+	##############
+	
+	### Prime Flesh
+	
+	pdxmesh = {
+		name = "portrait_prime_flesh_mesh"
+		file = "gfx/models/portraits/prime_flesh/SS_PF_Portrait_Mesh.mesh"
+		animation = { id = "idle"	type = "ss_prime_flesh_portrait_animation" }
+		scale = 1.0
+		
+		meshsettings = {
+			texture_diffuse = "ss_pf_portrait_diffuse.dds"
+		}
+	}
+}

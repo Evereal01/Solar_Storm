@@ -1,0 +1,67 @@
+ship_design = {
+	name = "NAME_prime_flesh_Starbase"
+	ship_size = starbase_swarm
+	country_type = swarm
+	section = {
+		template = "swarm_starbase_key"
+		slot = "core"
+
+		component = {
+			slot = "TORPEDO_01"
+			template = "LARGE_SCOURGE_MISSILE_1"
+		}
+		component = {
+			slot = "TORPEDO_02"
+			template = "LARGE_SCOURGE_MISSILE_1"
+		}
+		component = {
+			slot = "TORPEDO_03"
+			template = "LARGE_SCOURGE_MISSILE_1"
+		}
+		component = {
+			slot = "TORPEDO_04"
+			template = "LARGE_SCOURGE_MISSILE_1"
+		}
+		component = {
+			slot = "TORPEDO_05"
+			template = "LARGE_SCOURGE_MISSILE_1"
+		}
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_SCOURGE_PROJECTILE_WEAPON"
+		}
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_SCOURGE_PROJECTILE_WEAPON"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_SCOURGE_PROJECTILE_WEAPON"
+		}
+		component = {
+			slot = "MEDIUM_GUN_04"
+			template = "MEDIUM_SCOURGE_PROJECTILE_WEAPON"
+		}
+		component = {
+			slot = "MEDIUM_GUN_05"
+			template = "MEDIUM_SCOURGE_PROJECTILE_WEAPON"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_01"
+			template = "SWARM_STRIKE_CRAFT"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_02"
+			template = "SWARM_STRIKE_CRAFT"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_03"
+			template = "SWARM_STRIKE_CRAFT"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+	}
+	required_component="BIO_SENSORS"
+}

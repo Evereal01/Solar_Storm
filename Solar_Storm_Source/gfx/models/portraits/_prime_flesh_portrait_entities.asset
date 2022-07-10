@@ -1,0 +1,14 @@
+##############
+# SOLAR STORM
+##############
+
+# Prime Flesh
+
+entity = {
+	name = "portrait_prime_flesh_entity"
+	pdxmesh = "portrait_prime_flesh_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle"	 chance = 4.0 looping = no next_state = idle }
+	scale = 1.0
+}

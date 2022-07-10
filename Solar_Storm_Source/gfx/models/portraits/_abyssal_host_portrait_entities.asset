@@ -1,0 +1,114 @@
+##############
+# SOLAR STORM
+##############
+
+# Abyssal Host
+
+entity = {
+	name = "portrait_abyssal_host_entity"
+	pdxmesh = "portrait_abyssal_host_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle"    animation_blend_time = 0 chance = 4.0 looping = no next_state = idle
+		event = { time = 0 node = "spine_2" particle = "abyssal_host_portrait_particle"	keep_particle = yes trigger_once = yes }
+		start_event = { trigger_once = yes sound = { soundeffect = "abyssal_host_message" } }
+	}
+	state = { name = "idle"       animation = "idle2"    animation_blend_time = 0 chance = 1.0 looping = no next_state = idle
+		event = { time = 0 node = "spine_2" particle = "abyssal_host_portrait_particle"	keep_particle = yes trigger_once = yes }
+		event = { trigger_once = yes sound = { soundeffect = "abyssal_host_message" } }
+	}
+	scale = 0.85
+	
+	attach = { root = "portrait_abyssal_host_background_01_entity" }
+	attach = { root = "portrait_abyssal_host_background_02_entity" }
+	attach = { root = "portrait_abyssal_host_background_03_entity" }
+	attach = { root = "portrait_abyssal_host_background_04_entity" }
+	
+	attach = { root = "portrait_abyssal_host_background_details_entity" }
+}
+
+entity = {
+	name = "portrait_abyssal_host_father_entity"
+	pdxmesh = "portrait_abyssal_host_father_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle"    animation_blend_time = 0 chance = 4.0 looping = no next_state = idle
+		event = { time = 0 node = "spine_2" particle = "abyssal_host_portrait_particle"	keep_particle = yes trigger_once = yes }
+		start_event = { trigger_once = yes sound = { soundeffect = "abyssal_host_message" } }
+	}
+	scale = 0.85
+	
+	attach = { root = "portrait_abyssal_host_background_01_entity" }
+	attach = { root = "portrait_abyssal_host_background_02_entity" }
+	attach = { root = "portrait_abyssal_host_background_03_entity" }
+	attach = { root = "portrait_abyssal_host_background_04_entity" }
+	
+	attach = { root = "portrait_abyssal_host_background_details_entity" }
+}
+
+entity = {
+	name = "portrait_abyssal_host_background_01_entity"
+	pdxmesh = "portrait_abyssal_host_background_01_mesh"
+	get_state_from_parent = no
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle"    animation_blend_time = 0 }
+	scale = 1
+	
+	game_data = {
+		uv_animation_speed 		= 0.5
+		uv_animation_direction 	= { 0.0 1.0 }
+	}
+}
+entity = {
+	name = "portrait_abyssal_host_background_02_entity"
+	pdxmesh = "portrait_abyssal_host_background_02_mesh"
+	get_state_from_parent = no
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle"    animation_blend_time = 0 }
+	scale = 1
+	
+	game_data = {
+		uv_animation_speed 		= 0.75
+		uv_animation_direction 	= { 0.0 1.0 }
+	}
+}
+entity = {
+	name = "portrait_abyssal_host_background_03_entity"
+	pdxmesh = "portrait_abyssal_host_background_03_mesh"
+	get_state_from_parent = no
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle"    animation_blend_time = 0 }
+	scale = 1
+	
+	game_data = {
+		uv_animation_speed 		= 0.25
+		uv_animation_direction 	= { 0.0 -1.0 }
+	}
+}
+entity = {
+	name = "portrait_abyssal_host_background_04_entity"
+	pdxmesh = "portrait_abyssal_host_background_04_mesh"
+	get_state_from_parent = no
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle"    animation_blend_time = 0 }
+	scale = 1
+	
+	game_data = {
+		uv_animation_speed 		= 0.25
+		uv_animation_direction 	= { 0.0 1.0 }
+	}
+}
+
+entity = {
+	name = "portrait_abyssal_host_background_details_entity"
+	pdxmesh = "abyssal_host_room_details_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		state_time = 5 }
+	scale = 1
+	
+	game_data = {
+		uv_animation_speed 		= 0.15
+		uv_animation_direction 	= { 0.0 1.0 }
+	}
+}

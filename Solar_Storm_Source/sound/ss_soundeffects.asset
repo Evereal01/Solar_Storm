@@ -1,0 +1,486 @@
+##############
+# SOLAR STORM
+##############
+
+#### ION CANNONS
+
+soundeffect = {
+	name = ss_ion_cannon_fire
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = ss_ion_cannon_fire_01
+		sound = ss_ion_cannon_fire_02
+		sound = ss_ion_cannon_fire_03
+	}
+	is3d = yes
+	max_audible = 4
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.5
+	fade_out = 0.2
+}
+soundeffect = {
+	name = ss_ion_cannon_hit
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = ss_ion_cannon_hit_01
+		sound = ss_ion_cannon_hit_02
+		sound = ss_ion_cannon_hit_03
+	}
+	is3d = yes
+	max_audible = 5
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.8
+	fade_out = 0.2
+}
+soundeffect = {
+	name = distance_ss_ion_cannon_fire
+	falloff = "falloff_weapons_distance"
+	sounds = {
+		sound = distance_ss_ion_cannon_fire_01
+		sound = distance_ss_ion_cannon_fire_02
+		sound = distance_ss_ion_cannon_fire_03
+	}
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { 0.0 -2.05 }
+	volume = 0.4
+	fade_out = 0.2
+}
+soundeffect = {
+	name = distance_ss_ion_cannon_hit
+	falloff = "falloff_weapons_distance"
+	sounds = {
+		sound = distance_ss_ion_cannon_hit_01
+		sound = distance_ss_ion_cannon_hit_02
+		sound = distance_ss_ion_cannon_hit_03
+	}
+	is3d = yes
+	max_audible = 1
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { 0.0 -2.05 }
+	volume = 0.9
+	fade_out = 0.2
+}
+
+
+#### CRUISE MISSILES
+
+
+soundeffect = {
+	name = cruise_missile_fire
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = cruise_missile_fire_01
+		sound = cruise_missile_fire_02
+		sound = cruise_missile_fire_03
+	}
+	is3d = yes
+	max_audible = 3
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.45
+	fade_out = 0.2
+}
+soundeffect = {
+	name = cruise_missile_hit
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = cruise_missile_hit_01
+	}
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.8
+	fade_out = 0.2
+}
+soundeffect = {
+	name = distance_cruise_missile_fire
+	falloff = "falloff_weapons_distance"
+	sounds = {
+		sound = distance_cruise_missile_fire_01
+		sound = distance_cruise_missile_fire_02
+		sound = distance_cruise_missile_fire_03
+	}
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { 0.0 -2.05 }
+	volume = 0.7
+	fade_out = 0.2
+}
+soundeffect = {
+	name = distance_cruise_missile_hit
+	falloff = "falloff_weapons_distance"
+	sounds = {
+		sound = distance_cruise_missile_hit_01
+	}
+	is3d = yes
+	max_audible = 1
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { 0.0 -2.05 }
+	volume = 0.7
+	fade_out = 0.2
+}
+
+
+### CORVETTE BOMBS
+
+
+soundeffect = {
+	name = corvette_bomb_fire
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = corvette_bomb_fire_01
+	}
+	is3d = yes
+	max_audible = 3
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.45
+	fade_out = 0.2
+}
+soundeffect = {
+	name = corvette_bomb_hit
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = corvette_bomb_hit_01
+		sound = corvette_bomb_hit_02
+		sound = corvette_bomb_hit_03
+	}
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.8
+	fade_out = 0.2
+}
+soundeffect = {
+	name = distance_corvette_bomb_fire
+	falloff = "falloff_weapons_distance"
+	sounds = {
+		sound = distance_corvette_bomb_fire_01
+	}
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { 0.0 -2.05 }
+	volume = 0.7
+	fade_out = 0.2
+}
+soundeffect = {
+	name = distance_corvette_bomb_hit
+	falloff = "falloff_weapons_distance"
+	sounds = {
+		sound = distance_corvette_bomb_hit_01
+		sound = distance_corvette_bomb_hit_02
+		sound = distance_corvette_bomb_hit_03
+	}
+	is3d = yes
+	max_audible = 1
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { 0.0 -2.05 }
+	volume = 0.7
+	fade_out = 0.2
+}
+
+### CANNONS
+
+
+soundeffect = {
+	name = artillery_fire
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = artillery_fire_01
+		sound = artillery_fire_02
+		sound = artillery_fire_03
+		sound = artillery_fire_04
+		sound = artillery_fire_05
+		sound = artillery_fire_06
+	}
+	is3d = yes
+	max_audible = 8
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.5
+	fade_out = 0.2
+}
+soundeffect = {
+	name = cannon_hit
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = artillery_hit_01
+	}
+	is3d = yes
+	max_audible = 6
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.6
+	fade_out = 0.2
+}
+soundeffect = {
+	name = distance_cannon_fire
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = distance_artillery_fire_01
+		sound = distance_artillery_fire_02
+		sound = distance_artillery_fire_03
+		sound = distance_artillery_fire_04
+		sound = distance_artillery_fire_05
+		sound = distance_artillery_fire_06
+	}
+	is3d = yes
+	max_audible = 3
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.5
+	fade_out = 0.2
+}
+soundeffect = {
+	name = distance_cannon_hit
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = distance_artillery_hit_01
+	}
+	is3d = yes
+	max_audible = 5
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.65
+	fade_out = 0.2
+}
+
+### REIKER CANNON
+
+soundeffect = {
+	name = reiker_cannon_hit
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = reiker_cannon_hit_01
+	}
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.7
+	fade_out = 0.2
+}
+soundeffect = {
+	name = distance_reiker_cannon_hit
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = distance_reiker_cannon_hit_01
+	}
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.6
+	fade_out = 0.2
+}
+soundeffect = {
+	name = reiker_cannon_fire
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = reiker_cannon_fire_01
+	}
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.85
+	fade_out = 0.2
+}
+soundeffect = {
+	name = distance_reiker_cannon_fire
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = distance_reiker_cannon_fire_01
+	}
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.85
+	fade_out = 0.2
+}
+soundeffect = {
+	name = dark_matter_bomb_fire
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = dark_matter_bomb_fire_01
+	}
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.6
+	fade_out = 0.2
+}
+soundeffect = {
+	name = distance_dark_matter_bomb_fire
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = distance_dark_matter_bomb_fire_01
+	}
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.6
+	fade_out = 0.2
+}
+soundeffect = {
+	name = warp_cannon_hit
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = warp_cannon_hit_01
+	}
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.9
+	fade_out = 0.2
+}
+soundeffect = {
+	name = distance_warp_cannon_hit
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = distance_warp_cannon_hit_01
+	}
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.7
+	fade_out = 0.2
+}
+soundeffect = {
+	name = warp_cannon_fire
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = warp_cannon_fire_01
+	}
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.7
+	fade_out = 0.2
+}
+soundeffect = {
+	name = distance_warp_cannon_fire
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = distance_warp_cannon_fire_01
+	}
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.6
+	fade_out = 0.2
+}
+soundeffect = {
+	name = abyssal_laser_fire
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = abyssal_laser_fire_01
+		sound = abyssal_laser_fire_02
+		sound = abyssal_laser_fire_03
+	}
+	is3d = yes
+	max_audible = 5
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.8
+	fade_out = 0.2
+}
+soundeffect = {
+	name = distance_abyssal_laser_fire
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = distance_abyssal_laser_fire_01
+		sound = distance_abyssal_laser_fire_02
+		sound = distance_abyssal_laser_fire_03
+	}
+	is3d = yes
+	max_audible = 5
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.6
+	fade_out = 0.2
+}
+soundeffect = {
+	name = gravimetric_torpedo_fire
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = gravimetric_torpedo_fire_01
+		sound = gravimetric_torpedo_fire_02
+		sound = gravimetric_torpedo_fire_03
+	}
+	is3d = yes
+	max_audible = 5
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.8
+	fade_out = 0.2
+}
+soundeffect = {
+	name = distance_gravimetric_torpedo_fire
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = distance_gravimetric_torpedo_fire_01
+		sound = distance_gravimetric_torpedo_fire_02
+		sound = distance_gravimetric_torpedo_fire_03
+	}
+	is3d = yes
+	max_audible = 5
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.6
+	fade_out = 0.2
+}
+
+###### RELICS
+
+soundeffect =
+{
+    name = "relic_activation_heart_of_creation"
+    volume = 0.5
+    max_audible = 1
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { -10.0 10.0 }
+	fade_out = 10
+    sounds = {
+        sound = sfx_relic_activation_heart_of_creation
+	}
+}

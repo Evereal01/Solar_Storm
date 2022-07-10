@@ -1,0 +1,172 @@
+###############
+# SOLAR STORM #
+###############
+
+### Blasted planet
+ship_event = {
+	id = anomaly.10001
+	title = "anomaly.10001.name"
+	desc = "anomaly.10001.desc"
+	picture = GFX_evt_cold_barren
+	show_sound = event_ss_alert
+	location = FROM
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { clear_deposits = yes }
+	}
+
+	option = {
+		name = FASCINATING
+		hidden_effect = {
+			FROM = {
+				add_modifier = {
+					modifier = "blasted_planet"
+					days = -1
+				}
+			}
+		}
+		FROM = {
+			set_deposit = d_energy_4
+		}
+	}
+}
+
+
+
+ship_event = {
+	id = anomaly.10002
+	title = "anomaly.10002.name"
+	desc = "anomaly.10002.desc"
+	picture = GFX_evt_star_yellow
+	show_sound = event_ss_alert
+	location = FROM
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { clear_deposits = yes }
+	}
+
+	option = {
+		name = REMARKABLE
+		hidden_effect = {
+			FROM = {
+				add_modifier = {
+					modifier = "stellar_rubbish_dump"
+					days = -1
+				}
+			}
+		}
+		FROM = {
+			set_deposit = d_engineering_4
+		}
+	}
+}
+
+
+ship_event = {
+	id = anomaly.10003
+	title = "anomaly.10003.name"
+	desc = "anomaly.10003.desc"
+	picture = GFX_evt_cold_barren
+	show_sound = event_ss_alert
+	location = FROM
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { clear_deposits = yes }
+	}
+
+	option = {
+		name = INTRIGUING
+		hidden_effect = {
+			FROM = {
+				add_modifier = {
+					modifier = "cold_aerosol"
+					days = -1
+				}
+			}
+		}
+		FROM = {
+			set_deposit = d_society_4
+		}
+	}
+}
+
+ship_event = {
+	id = anomaly.10004
+	title = "anomaly.10004.name"
+	desc = "anomaly.10004.desc"
+	picture = GFX_evt_gas_giant
+	show_sound = event_ss_alert
+	location = FROM
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { clear_deposits = yes }
+	}
+
+	option = {
+		name = INCREDIBLE
+		hidden_effect = {
+			FROM = {
+				add_modifier = {
+					modifier = "small_brown_dwarf"
+					days = -1
+				}
+			}
+		}
+		FROM = {
+			set_deposit = d_physics_4
+		}
+	}
+}
+
+ship_event = {
+	id = anomaly.10010
+	title = "anomaly.10010.name"
+	desc = "anomaly.10010.desc"
+	picture = GFX_evt_asteroid_field
+	show_sound = event_ss_alert
+	location = FROM
+
+	is_triggered_only = yes
+
+	immediate = {}
+
+	option = {
+		name = anomaly.10010.opta
+		enable_special_project = {
+			name = "EMP_TORPEDO_PROJECT"
+			location = this
+			owner = root.owner
+		}
+	}
+}
+
+ship_event = {
+	id = anomaly.10011
+	title = "anomaly.10011.name"
+	desc = "anomaly.10011.desc"
+	picture = GFX_evt_asteroid_field
+	show_sound = event_ss_alert
+	location = FROM
+
+	is_triggered_only = yes
+
+	immediate = {}
+
+	option = {
+		name = EXCELLENT
+		owner = {
+			add_tech_progress = {
+				tech = tech_emp_torpedo
+				progress = 0.25
+			}
+		}
+	}
+}

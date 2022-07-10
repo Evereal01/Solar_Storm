@@ -1,0 +1,83 @@
+objectTypes = {
+
+	##############
+	# SOLAR STORM
+	##############
+	
+	### Abyssal Host
+	
+	
+	pdxmesh = {
+		name = "portrait_abyssal_host_mesh"
+		file = "gfx/models/portraits/extradimensional/extradimensional_01_portrait.mesh"
+		animation = { id = "idle"	type = "extradimensional_01_portrait_happy_animation" }
+		animation = { id = "idle2"	type = "extradimensional_01_portrait_happy_2_animation" }
+		scale = 1.0
+		
+		meshsettings = {
+			texture_diffuse = "abyssal_host.dds"
+		}
+	}
+	
+	pdxmesh = {
+		name = "portrait_abyssal_host_father_mesh"
+		file = "gfx/models/portraits/extradimensional/SS_Father_Mesh_Portrait.mesh"
+		animation = { id = "idle"	type = "ss_father_portrait_animation" }
+		scale = 1.0
+		
+		meshsettings = {
+			texture_diffuse = "ss_father_diffuse.dds"
+		}
+	}
+	
+	pdxmesh = {
+		name = "portrait_abyssal_host_background_01_mesh"
+		file = "gfx/models/portraits/extradimensional/extradimensional_01_background_01.mesh"
+		animation = { id = "idle"	type = "extradimensional_01_background_01_happy_animation" }
+		scale = 1.0
+		
+		meshsettings = {
+			texture_diffuse = "abyssal_host_background.dds"
+		}
+	}
+	pdxmesh = {
+		name = "portrait_abyssal_host_background_02_mesh"
+		file = "gfx/models/portraits/extradimensional/extradimensional_01_background_02.mesh"
+		animation = { id = "idle"	type = "extradimensional_01_background_02_happy_animation" }
+		scale = 1.0
+		
+		meshsettings = {
+			texture_diffuse = "abyssal_host_background.dds"
+		}
+	}
+	pdxmesh = {
+		name = "portrait_abyssal_host_background_03_mesh"
+		file = "gfx/models/portraits/extradimensional/extradimensional_01_background_03.mesh"
+		animation = { id = "idle"	type = "extradimensional_01_background_03_happy_animation" }
+		scale = 1.0
+		
+		meshsettings = {
+			texture_diffuse = "abyssal_host_background.dds"
+		}
+	}
+	pdxmesh = {
+		name = "portrait_abyssal_host_background_04_mesh"
+		file = "gfx/models/portraits/extradimensional/extradimensional_01_background_04.mesh"
+		animation = { id = "idle"	type = "extradimensional_01_background_04_happy_animation" }
+		scale = 1.0
+		
+		meshsettings = {
+			texture_diffuse = "abyssal_host_background.dds"
+		}
+	}
+	
+	pdxmesh = {
+		name = "abyssal_host_room_details_mesh"
+		file = "gfx/models/portraits/extradimensional/extradimensional_room_details.mesh"
+		scale = 1.0
+		
+		meshsettings = {
+			texture_diffuse = "abyssal_host_room_details.dds"
+		}
+	}
+}

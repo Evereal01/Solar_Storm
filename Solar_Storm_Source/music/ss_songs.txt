@@ -1,0 +1,15 @@
+song = {
+	name = "Riding the Hyperlanes"
+}
+
+song = {
+	name = "Old Worlds"
+}
+
+song = {
+	name = "Dark Nebula"
+}
+
+song = {
+	name = "Abyssal Secrets"
+}

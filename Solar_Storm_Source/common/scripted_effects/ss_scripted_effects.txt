@@ -1,0 +1,158 @@
+#	Example:
+#
+#	example_effect = {
+#		add_resource = { energy = -100 }
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		example_effect = yes
+#	}
+#
+
+create_food_weighted_development = {
+	random_list = {
+		60 = { add_deposit = ss_d_private_food }
+		10 = { add_deposit = ss_d_private_trade }
+		10 = { add_deposit = ss_d_private_civilian }
+		10 = { add_deposit = ss_d_private_admin }
+		10 = { add_deposit = ss_d_private_research }
+	}
+}
+
+create_mineral_weighted_development = {
+	random_list = {
+		60 = { add_deposit = ss_d_private_mining }
+		10 = { add_deposit = ss_d_private_trade }
+		10 = { add_deposit = ss_d_private_industry }
+		10 = { add_deposit = ss_d_private_military }
+		10 = { add_deposit = ss_d_private_research }
+	}
+}
+
+create_services_weighted_development = {
+	random_list = {
+		25 = { add_deposit = ss_d_private_trade }
+		20 = { add_deposit = ss_d_private_admin }
+		10 = { add_deposit = ss_d_private_civilian }
+		20 = { add_deposit = ss_d_private_services }
+		25 = { add_deposit = ss_d_private_research }
+	}
+}
+
+create_trade_weighted_development = {
+	random_list = {
+		60 = { add_deposit = ss_d_private_trade }
+		10 = { add_deposit = ss_d_private_admin }
+		10 = { add_deposit = ss_d_private_civilian }
+		10 = { add_deposit = ss_d_private_services }
+		10 = { add_deposit = ss_d_private_research }
+	}
+}
+
+create_industry_weighted_development = {
+	random_list = {
+		5 = { add_deposit = ss_d_private_trade }
+		60 = { add_deposit = ss_d_private_industry }
+		5 = { add_deposit = ss_d_private_civilian }
+		15 = { add_deposit = ss_d_private_military }
+		15 = { add_deposit = ss_d_private_research }
+	}
+}
+
+create_factory_weighted_development = {
+	random_list = {
+		15 = { add_deposit = ss_d_private_trade }
+		10 = { add_deposit = ss_d_private_industry }
+		50 = { add_deposit = ss_d_private_civilian }
+		5 = { add_deposit = ss_d_private_military }
+		20 = { add_deposit = ss_d_private_research }
+	}
+}
+
+create_technical_weighted_development = {
+	random_list = {
+		5 = { add_deposit = ss_d_private_trade }
+		5 = { add_deposit = ss_d_private_industry }
+		10 = { add_deposit = ss_d_private_services }
+		10 = { add_deposit = ss_d_private_civilian }
+		70 = { add_deposit = ss_d_private_research }
+	}
+}
+
+create_war_weighted_development = {
+	random_list = {
+		35 = { add_deposit = ss_d_private_industry }
+		30 = { add_deposit = ss_d_private_military }
+		35 = { add_deposit = ss_d_private_research }
+	}
+}
+
+create_resource_weighted_development = {
+	random_list = {
+		40 = { add_deposit = ss_d_private_food }
+		40 = { add_deposit = ss_d_private_mining }
+		10 = { add_deposit = ss_d_private_trade }
+		10 = { add_deposit = ss_d_private_services }
+	}
+}
+
+create_random_development = {
+	random_list = {
+		10 = { add_deposit = ss_d_private_trade }
+		10 = { add_deposit = ss_d_private_industry }
+		10 = { add_deposit = ss_d_private_civilian }
+		10 = { add_deposit = ss_d_private_admin }
+		10 = { add_deposit = ss_d_private_research }
+		10 = { add_deposit = ss_d_private_military }
+		10 = { add_deposit = ss_d_private_services }
+	}
+}
+
+create_sp_foundry_weighted_development = {
+	random_list = {
+		70 = { add_deposit = ss_d_sp_foundry }
+		5 = { add_deposit = ss_d_sp_industry }
+		20 = { add_deposit = ss_d_sp_research }
+		5 = { add_deposit = ss_d_sp_services }
+	}
+}
+
+create_sp_industry_weighted_development = {
+	random_list = {
+		70 = { add_deposit = ss_d_sp_industry }
+		5 = { add_deposit = ss_d_sp_foundry }
+		20 = { add_deposit = ss_d_sp_research }
+		5 = { add_deposit = ss_d_sp_services }
+	}
+}
+
+create_sp_research_weighted_development = {
+	random_list = {
+		5 = { add_deposit = ss_d_sp_industry }
+		5 = { add_deposit = ss_d_sp_foundry }
+		70 = { add_deposit = ss_d_sp_research }
+		10 = { add_deposit = ss_d_sp_services }
+		10 = { add_deposit = ss_d_sp_leisure }
+	}
+}
+
+create_sp_services_weighted_development = {
+	random_list = {
+		10 = { add_deposit = ss_d_sp_research }
+		45 = { add_deposit = ss_d_sp_services }
+		45 = { add_deposit = ss_d_sp_leisure }
+	}
+}
+
+create_sp_random_development = {
+	random_list = {
+		10 = { add_deposit = ss_d_sp_foundry }
+		10 = { add_deposit = ss_d_sp_industry }
+		15 = { add_deposit = ss_d_sp_research }
+		10 = { add_deposit = ss_d_sp_services }
+		10 = { add_deposit = ss_d_sp_leisure }
+	}
+}

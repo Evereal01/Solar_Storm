@@ -1,0 +1,1987 @@
+#####################
+# SOLAR STORM    	#
+# Weapon ENTITIES  	#
+#####################
+
+#####
+# XL
+#####
+
+entity = {
+	name = "dark_matter_bomb_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "dark_matter_bomb_muzzle_particle" keep_particle = yes sound = { soundeffect = dark_matter_bomb_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dark_matter_bomb_fire" } } 
+	}
+}
+
+# PROJECTILE
+
+entity = {
+	name = "dark_matter_bomb_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "dark_matter_bomb_idle_particle" keep_particle = yes }
+		#event = { time = 0 particle = "proton_torpedoes_idle_trail_particle" keep_particle = yes }
+	}
+}
+
+# HIT EFFECT
+
+entity = {
+	name = "dark_matter_bomb_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "dark_matter_bomb_hit_effect" sound = { soundeffect = energy_torpedo_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_energy_torpedo_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "dark_matter_bomb_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "dark_matter_bomb_hit_effect" }
+		event = { time = 0.0 particle = "projectile_large_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+
+entity = {
+	name = "adv_dark_matter_bomb_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "adv_dark_matter_bomb_muzzle_particle" keep_particle = yes sound = { soundeffect = dark_matter_bomb_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dark_matter_bomb_fire" } } 
+	}
+}
+
+# PROJECTILE
+
+entity = {
+	name = "adv_dark_matter_bomb_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "adv_dark_matter_bomb_idle_particle" keep_particle = yes }
+		#event = { time = 0 particle = "proton_torpedoes_idle_trail_particle" keep_particle = yes }
+	}
+}
+
+# HIT EFFECT
+
+entity = {
+	name = "adv_dark_matter_bomb_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "adv_dark_matter_bomb_hit_effect" sound = { soundeffect = energy_torpedo_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_energy_torpedo_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "adv_dark_matter_bomb_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "adv_dark_matter_bomb_hit_effect" }
+		event = { time = 0.0 particle = "projectile_large_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+
+####### WARP CANNON
+
+
+entity = {
+	name = "warp_cannon_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "warp_cannon_muzzle_particle" keep_particle = yes sound = { soundeffect = warp_cannon_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_warp_cannon_fire" } }
+	}
+}
+
+# PROJECTILE
+
+entity = {
+	name = "warp_cannon_entity"
+	pdxmesh = "adv_kinetic_artillery_tracer_round_mesh"
+	
+	default_state = idle
+	state = { name = "idle"
+		#event = { time = 0 particle = "warp_cannon_idle_particle" keep_particle = yes }
+	}
+	
+	scale = 2
+}
+
+# HIT EFFECT
+
+entity = {
+	name = "warp_cannon_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5.0 looping = no
+		event = { time = 0.0 particle = "warp_cannon_hit_effect" sound = { soundeffect = warp_cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_warp_cannon_hit" } }
+	}
+	default_state = "explode_med_hp"
+	scale = 2
+}
+
+entity = {
+	name = "warp_cannon_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "warp_cannon_hit_effect" }
+		event = { time = 0.0 particle = "projectile_medium_shield_hit_effect" }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+	scale = 2
+}
+
+
+####### ADV WARP CANNON
+
+entity = {
+	name = "adv_warp_cannon_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "adv_warp_cannon_muzzle_particle" keep_particle = yes sound = { soundeffect = warp_cannon_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_warp_cannon_fire" } }
+	}
+}
+
+# PROJECTILE
+
+entity = {
+	name = "adv_warp_cannon_entity"
+	pdxmesh = "adv_kinetic_artillery_tracer_round_mesh"
+	
+	default_state = idle
+	state = { name = "idle"
+		#event = { time = 0 particle = "adv_warp_cannon_idle_particle" keep_particle = yes }
+	}
+	
+	scale = 2
+}
+
+# HIT EFFECT
+
+entity = {
+	name = "adv_warp_cannon_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5.0 looping = no
+		event = { time = 0.0 particle = "adv_warp_cannon_hit_effect" sound = { soundeffect = warp_cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_warp_cannon_hit" } }
+	}
+	default_state = "explode_med_hp"
+	scale = 2
+}
+
+entity = {
+	name = "adv_warp_cannon_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "adv_warp_cannon_hit_effect" }
+		event = { time = 0.0 particle = "projectile_medium_shield_hit_effect" }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+	scale = 2
+}
+
+
+###########
+# MISSILES
+###########
+
+#### CRUISE MISSILES
+
+## HIT EFFECTS
+
+entity = {
+	name = "cruise_missile_1_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "cruise_missile_hit_effect" sound = { soundeffect = cruise_missile_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cruise_missile_hit" } }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "cruise_missile_adv_1_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "cruise_missile_adv_hit_effect" sound = { soundeffect = cruise_missile_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cruise_missile_hit" } }
+	}
+	default_state = "explode_med_hp"
+}
+
+## MUZZLE
+
+entity = {
+	name = "cruise_missile_1_muzzle_entity"
+	cull_radius = 50.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "cruise_missile_muzzle_particle" keep_particle = yes sound = { soundeffect = cruise_missile_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cruise_missile_fire" } }
+	}
+}
+
+## IDLE ENTITY
+
+entity = {
+	name = "cruise_missile_1_large_entity"
+	pdxmesh = "arthropoid_01_missile_mesh"
+	
+	default_state = idle
+	state = { name = "idle" animation = "idle"
+		event = { time = 0 node = exhaust particle = "cruise_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = exhaust particle = "cruise_missile_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss"
+		time_offset = { 0 1.4 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "cruise_missile_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss2"
+		time_offset = { 0 1 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "cruise_missile_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss_reversed"
+		time_offset = { 0 1.4 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "cruise_missile_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss2_reversed"
+		time_offset = { 0 1 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "cruise_missile_idle_flame_particle" keep_particle = yes }
+	}
+	scale = 2
+}
+
+#### CORVETTE BOMBS
+
+## HIT EFFECTS
+
+entity = {
+	name = "corvette_bomb_1_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "corvette_bomb_hit_effect" sound = { soundeffect = corvette_bomb_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_corvette_bomb_hit" } }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "adv_corvette_bomb_1_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "adv_corvette_bomb_hit_effect" sound = { soundeffect = corvette_bomb_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_corvette_bomb_hit" } }
+	}
+	default_state = "explode_med_hp"
+}
+
+## MUZZLE
+
+entity = {
+	name = "corvette_bomb_1_muzzle_entity"
+	cull_radius = 50.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "corvette_bomb_muzzle_particle" keep_particle = yes sound = { soundeffect = corvette_bomb_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_corvette_bomb_fire" } }
+	}
+}
+
+## IDLE ENTITY
+
+entity = {
+	name = "corvette_bomb_1_large_entity"
+	pdxmesh = "arthropoid_01_missile_mesh"
+	
+	default_state = idle
+	state = { name = "idle" animation = "idle"
+		event = { time = 0 node = exhaust particle = "corvette_bomb_idle_particle" keep_particle = yes }
+		event = { time = 0 node = exhaust particle = "corvette_bomb_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss"
+		time_offset = { 0 1.4 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "corvette_bomb_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss2"
+		time_offset = { 0 1 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "corvette_bomb_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss_reversed"
+		time_offset = { 0 1.4 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "corvette_bomb_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss2_reversed"
+		time_offset = { 0 1 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "corvette_bomb_idle_flame_particle" keep_particle = yes }
+	}
+	scale = 2
+}
+
+
+
+#### EMP TORPEDOES
+
+## HIT EFFECTS
+
+entity = {
+	name = "emp_torpedo_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "emp_torpedo_hit_effect" sound = { soundeffect = cruise_missile_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cruise_missile_hit" } }
+	}
+	default_state = "explode_med_hp"
+}
+
+## MUZZLE
+
+entity = {
+	name = "emp_torpedo_muzzle_entity"
+	cull_radius = 50.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "emp_torpedo_muzzle_particle" keep_particle = yes sound = { soundeffect = corvette_bomb_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_corvette_bomb_fire" } }
+	}
+}
+
+## IDLE ENTITY
+
+entity = {
+	name = "emp_torpedo_large_entity"
+	pdxmesh = "arthropoid_01_missile_mesh"
+	
+	default_state = idle
+	state = { name = "idle" animation = "idle"
+		event = { time = 0 node = exhaust particle = "emp_torpedo_idle_particle" keep_particle = yes }
+		event = { time = 0 node = exhaust particle = "emp_torpedo_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss"
+		time_offset = { 0 1.4 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "emp_torpedo_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss2"
+		time_offset = { 0 1 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "emp_torpedo_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss_reversed"
+		time_offset = { 0 1.4 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "emp_torpedo_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss2_reversed"
+		time_offset = { 0 1 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "emp_torpedo_idle_flame_particle" keep_particle = yes }
+	}
+	scale = 2
+}
+
+
+#### GRAVIMETRIC TORPEDOES
+
+## HIT EFFECTS
+
+entity = {
+	name = "gravimetric_torpedo_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "gravimetric_torpedo_hit_effect" sound = { soundeffect = cruise_missile_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cruise_missile_hit" } }
+	}
+	default_state = "explode_med_hp"
+}
+
+## MUZZLE
+
+entity = {
+	name = "gravimetric_torpedo_muzzle_entity"
+	cull_radius = 50.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "gravimetric_torpedo_muzzle_particle" keep_particle = yes sound = { soundeffect = gravimetric_torpedo_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_gravimetric_torpedo_fire" } }
+	}
+}
+
+## IDLE ENTITY
+
+entity = {
+	name = "gravimetric_torpedo_large_entity"
+	pdxmesh = "ss_gravimetric_torpedo_mesh"
+	
+	default_state = idle
+	state = { name = "idle" animation = "idle"
+		event = { time = 0 node = exhaust particle = "gravimetric_torpedo_idle_particle" keep_particle = yes }
+		event = { time = 0 node = exhaust particle = "gravimetric_torpedo_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss"
+		time_offset = { 0 1.4 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "gravimetric_torpedo_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss2"
+		time_offset = { 0 1 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "gravimetric_torpedo_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss_reversed"
+		time_offset = { 0 1.4 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "gravimetric_torpedo_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss2_reversed"
+		time_offset = { 0 1 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "gravimetric_torpedo_idle_flame_particle" keep_particle = yes }
+	}
+	scale = 2
+}
+
+
+##########
+# LASER
+##########
+
+entity = {
+	name = "abyssal_laser_small_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 1 looping = no
+		event = { time = 0 particle = "abyssal_laser_small_muzzle_particle" keep_particle = yes sound = { soundeffect = abyssal_laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_abyssal_laser_fire" } }
+	}
+}
+
+entity = {
+	name = "abyssal_laser_medium_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { time = 0 particle = "abyssal_laser_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = abyssal_laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_abyssal_laser_fire" } }
+	}
+}
+
+entity = {
+	name = "abyssal_laser_small_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = abyssal_laser_small_hit_effect sound = { soundeffect = energy_lance_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_energy_lance_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "abyssal_laser_medium_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = abyssal_laser_medium_hit_effect sound = { soundeffect = energy_lance_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_energy_lance_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "abyssal_laser_small_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = abyssal_laser_small_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_small_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "abyssal_laser_medium_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = abyssal_laser_medium_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_medium_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+
+
+###############
+# PROJECTILES
+###############
+
+
+####### ION CANNONS
+
+
+# MUZZLE FLASH
+
+entity = {
+	name = "ion_cannon_1_small_muzzle_flash_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "ion_cannon_1_small_muzzle_particle" keep_particle = yes sound = { soundeffect = ss_ion_cannon_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ss_ion_cannon_fire" } }
+	}
+}
+
+entity = {
+	name = "ion_cannon_1_medium_muzzle_flash_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "ion_cannon_1_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = ss_ion_cannon_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ss_ion_cannon_fire" } }
+	}
+}
+entity = {
+	name = "ion_cannon_1_large_muzzle_flash_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "ion_cannon_1_large_muzzle_particle" keep_particle = yes sound = { soundeffect = ss_ion_cannon_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ss_ion_cannon_fire" } }
+	}
+}
+
+# PROJECTILE
+
+entity = {
+	name = "ion_cannon_1_small_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "ion_cannon_1_small_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "ion_cannon_1_small_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "ion_cannon_1_medium_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "ion_cannon_1_medium_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "ion_cannon_1_medium_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "ion_cannon_1_large_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "ion_cannon_1_large_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "ion_cannon_1_large_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+# HIT EFFECT
+
+entity = {
+	name = "ion_cannon_1_small_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "ion_cannon_1_small_hit_effect" sound = { soundeffect = ss_ion_cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ss_ion_cannon_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "ion_cannon_1_medium_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "ion_cannon_1_medium_hit_effect" sound = { soundeffect = ss_ion_cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ss_ion_cannon_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "ion_cannon_1_large_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "ion_cannon_1_large_hit_effect" sound = { soundeffect = ss_ion_cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ss_ion_cannon_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "ion_cannon_1_small_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "ion_cannon_1_small_hit_effect"  }
+		event = { time = 0.0 particle = "projectile_small_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "ion_cannon_1_medium_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "ion_cannon_1_medium_hit_effect" }
+		event = { time = 0.0 particle = "projectile_medium_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "ion_cannon_1_large_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "ion_cannon_1_large_hit_effect" }
+		event = { time = 0.0 particle = "projectile_large_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+
+##### ION CANNON 2
+
+
+
+# MUZZLE FLASH
+
+entity = {
+	name = "ion_cannon_2_small_muzzle_flash_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "ion_cannon_2_small_muzzle_particle" keep_particle = yes sound = { soundeffect = ss_ion_cannon_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ss_ion_cannon_fire" } }
+	}
+}
+
+entity = {
+	name = "ion_cannon_2_medium_muzzle_flash_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "ion_cannon_2_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = ss_ion_cannon_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ss_ion_cannon_fire" } }
+	}
+}
+entity = {
+	name = "ion_cannon_2_large_muzzle_flash_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "ion_cannon_2_large_muzzle_particle" keep_particle = yes sound = { soundeffect = ss_ion_cannon_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ss_ion_cannon_fire" } }
+	}
+}
+
+# PROJECTILE
+
+entity = {
+	name = "ion_cannon_2_small_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "ion_cannon_2_small_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "ion_cannon_2_small_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "ion_cannon_2_medium_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "ion_cannon_2_medium_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "ion_cannon_2_medium_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "ion_cannon_2_large_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "ion_cannon_2_large_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "ion_cannon_2_large_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+# HIT EFFECT
+
+entity = {
+	name = "ion_cannon_2_small_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "ion_cannon_2_small_hit_effect" sound = { soundeffect = ss_ion_cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ss_ion_cannon_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "ion_cannon_2_medium_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "ion_cannon_2_medium_hit_effect" sound = { soundeffect = ss_ion_cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ss_ion_cannon_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "ion_cannon_2_large_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "ion_cannon_2_large_hit_effect" sound = { soundeffect = ss_ion_cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ss_ion_cannon_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "ion_cannon_2_small_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "ion_cannon_2_small_hit_effect"  }
+		event = { time = 0.0 particle = "projectile_small_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "ion_cannon_2_medium_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "ion_cannon_2_medium_hit_effect" }
+		event = { time = 0.0 particle = "projectile_medium_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "ion_cannon_2_large_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "ion_cannon_2_large_hit_effect" }
+		event = { time = 0.0 particle = "projectile_large_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+
+
+##### ION CANNON 3
+
+
+
+# MUZZLE FLASH
+
+entity = {
+	name = "ion_cannon_3_small_muzzle_flash_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "ion_cannon_3_small_muzzle_particle" keep_particle = yes sound = { soundeffect = ss_ion_cannon_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ss_ion_cannon_fire" } }
+	}
+}
+
+entity = {
+	name = "ion_cannon_3_medium_muzzle_flash_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "ion_cannon_3_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = ss_ion_cannon_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ss_ion_cannon_fire" } }
+	}
+}
+entity = {
+	name = "ion_cannon_3_large_muzzle_flash_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "ion_cannon_3_large_muzzle_particle" keep_particle = yes sound = { soundeffect = ss_ion_cannon_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ss_ion_cannon_fire" } }
+	}
+}
+
+# PROJECTILE
+
+entity = {
+	name = "ion_cannon_3_small_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "ion_cannon_3_small_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "ion_cannon_3_small_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "ion_cannon_3_medium_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "ion_cannon_3_medium_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "ion_cannon_3_medium_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "ion_cannon_3_large_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "ion_cannon_3_large_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "ion_cannon_3_large_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+# HIT EFFECT
+
+entity = {
+	name = "ion_cannon_3_small_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "ion_cannon_3_small_hit_effect" sound = { soundeffect = ss_ion_cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ss_ion_cannon_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "ion_cannon_3_medium_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "ion_cannon_3_medium_hit_effect" sound = { soundeffect = ss_ion_cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ss_ion_cannon_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "ion_cannon_3_large_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "ion_cannon_3_large_hit_effect" sound = { soundeffect = ss_ion_cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ss_ion_cannon_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "ion_cannon_3_small_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "ion_cannon_3_small_hit_effect"  }
+		event = { time = 0.0 particle = "projectile_small_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "ion_cannon_3_medium_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "ion_cannon_3_medium_hit_effect" }
+		event = { time = 0.0 particle = "projectile_medium_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "ion_cannon_3_large_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "ion_cannon_3_large_hit_effect" }
+		event = { time = 0.0 particle = "projectile_large_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+
+##### ION CANNON ADV
+
+
+
+# MUZZLE FLASH
+
+entity = {
+	name = "ion_cannon_adv_small_muzzle_flash_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "ion_cannon_adv_small_muzzle_particle" keep_particle = yes sound = { soundeffect = ss_ion_cannon_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ss_ion_cannon_fire" } }
+	}
+}
+
+entity = {
+	name = "ion_cannon_adv_medium_muzzle_flash_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "ion_cannon_adv_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = ss_ion_cannon_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ss_ion_cannon_fire" } }
+	}
+}
+entity = {
+	name = "ion_cannon_adv_large_muzzle_flash_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "ion_cannon_adv_large_muzzle_particle" keep_particle = yes sound = { soundeffect = ss_ion_cannon_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ss_ion_cannon_fire" } }
+	}
+}
+
+# PROJECTILE
+
+entity = {
+	name = "ion_cannon_adv_small_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "ion_cannon_adv_small_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "ion_cannon_adv_small_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "ion_cannon_adv_medium_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "ion_cannon_adv_medium_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "ion_cannon_adv_medium_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "ion_cannon_adv_large_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "ion_cannon_adv_large_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "ion_cannon_adv_large_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+# HIT EFFECT
+
+entity = {
+	name = "ion_cannon_adv_small_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "ion_cannon_adv_small_hit_effect" sound = { soundeffect = ss_ion_cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ss_ion_cannon_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "ion_cannon_adv_medium_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "ion_cannon_adv_medium_hit_effect" sound = { soundeffect = ss_ion_cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ss_ion_cannon_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "ion_cannon_adv_large_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "ion_cannon_adv_large_hit_effect" sound = { soundeffect = ss_ion_cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ss_ion_cannon_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "ion_cannon_adv_small_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "ion_cannon_adv_small_hit_effect"  }
+		event = { time = 0.0 particle = "projectile_small_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "ion_cannon_adv_medium_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "ion_cannon_adv_medium_hit_effect" }
+		event = { time = 0.0 particle = "projectile_medium_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "ion_cannon_adv_large_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "ion_cannon_adv_large_hit_effect" }
+		event = { time = 0.0 particle = "projectile_large_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+
+####### CANNONS 1
+
+
+# MUZZLE FLASH
+
+entity = {
+	name = "cannon_1_small_muzzle_flash_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "cannon_1_small_muzzle_particle" keep_particle = yes sound = { soundeffect = artillery_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cannon_fire" } }
+	}
+}
+
+entity = {
+	name = "cannon_1_medium_muzzle_flash_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "cannon_1_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = artillery_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cannon_fire" } }
+	}
+}
+entity = {
+	name = "cannon_1_large_muzzle_flash_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "cannon_1_large_muzzle_particle" keep_particle = yes sound = { soundeffect = artillery_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cannon_fire" } }
+	}
+}
+
+# PROJECTILE
+
+entity = {
+	name = "cannon_1_large_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "cannon_1_large_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "cannon_1_large_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "cannon_1_medium_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "cannon_1_medium_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "cannon_1_medium_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "cannon_1_small_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "cannon_1_small_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "cannon_1_small_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+# HIT EFFECT
+
+entity = {
+	name = "cannon_1_small_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "cannon_1_small_hit_effect" sound = { soundeffect = cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cannon_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "cannon_1_medium_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "cannon_1_medium_hit_effect" sound = { soundeffect = cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cannon_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "cannon_1_large_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "cannon_1_large_hit_effect" sound = { soundeffect = cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cannon_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "cannon_1_small_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "cannon_1_small_hit_effect"  }
+		event = { time = 0.0 particle = "projectile_small_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "cannon_1_medium_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "cannon_1_medium_hit_effect" }
+		event = { time = 0.0 particle = "projectile_medium_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "cannon_1_large_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "cannon_1_large_hit_effect" }
+		event = { time = 0.0 particle = "projectile_large_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+
+####### CANNONS 2
+
+
+# MUZZLE FLASH
+
+entity = {
+	name = "cannon_2_small_muzzle_flash_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "cannon_2_small_muzzle_particle" keep_particle = yes sound = { soundeffect = artillery_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cannon_fire" } }
+	}
+}
+
+entity = {
+	name = "cannon_2_medium_muzzle_flash_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "cannon_2_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = artillery_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cannon_fire" } }
+	}
+}
+entity = {
+	name = "cannon_2_large_muzzle_flash_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "cannon_2_large_muzzle_particle" keep_particle = yes sound = { soundeffect = artillery_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cannon_fire" } }
+	}
+}
+
+# PROJECTILE
+
+entity = {
+	name = "cannon_2_large_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "cannon_2_large_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "cannon_2_large_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "cannon_2_medium_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "cannon_2_medium_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "cannon_2_medium_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "cannon_2_small_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "cannon_2_small_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "cannon_2_small_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+# HIT EFFECT
+
+entity = {
+	name = "cannon_2_small_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "cannon_2_small_hit_effect" sound = { soundeffect = cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cannon_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "cannon_2_medium_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "cannon_2_medium_hit_effect" sound = { soundeffect = cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cannon_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "cannon_2_large_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "cannon_2_large_hit_effect" sound = { soundeffect = cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cannon_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "cannon_2_small_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "cannon_2_small_hit_effect"  }
+		event = { time = 0.0 particle = "projectile_small_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "cannon_2_medium_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "cannon_2_medium_hit_effect" }
+		event = { time = 0.0 particle = "projectile_medium_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "cannon_2_large_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "cannon_2_large_hit_effect" }
+		event = { time = 0.0 particle = "projectile_large_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+
+####### CANNONS ADV
+
+
+# MUZZLE FLASH
+
+entity = {
+	name = "cannon_adv_small_muzzle_flash_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "cannon_adv_small_muzzle_particle" keep_particle = yes sound = { soundeffect = artillery_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cannon_fire" } }
+	}
+}
+
+entity = {
+	name = "cannon_adv_medium_muzzle_flash_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "cannon_adv_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = artillery_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cannon_fire" } }
+	}
+}
+entity = {
+	name = "cannon_adv_large_muzzle_flash_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "cannon_adv_large_muzzle_particle" keep_particle = yes sound = { soundeffect = artillery_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cannon_fire" } }
+	}
+}
+
+# PROJECTILE
+
+entity = {
+	name = "cannon_adv_large_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "cannon_adv_large_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "cannon_adv_large_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "cannon_adv_medium_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "cannon_adv_medium_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "cannon_adv_medium_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "cannon_adv_small_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "cannon_adv_small_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "cannon_adv_small_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+# HIT EFFECT
+
+entity = {
+	name = "cannon_adv_small_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "cannon_adv_small_hit_effect" sound = { soundeffect = cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cannon_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "cannon_adv_medium_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "cannon_adv_medium_hit_effect" sound = { soundeffect = cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cannon_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "cannon_adv_large_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "cannon_adv_large_hit_effect" sound = { soundeffect = cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cannon_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "cannon_adv_small_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "cannon_adv_small_hit_effect"  }
+		event = { time = 0.0 particle = "projectile_small_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "cannon_adv_medium_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "cannon_adv_medium_hit_effect" }
+		event = { time = 0.0 particle = "projectile_medium_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "cannon_adv_large_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "cannon_adv_large_hit_effect" }
+		event = { time = 0.0 particle = "projectile_large_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+
+####### CANNONS 3
+
+
+# MUZZLE FLASH
+
+entity = {
+	name = "cannon_3_small_muzzle_flash_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "cannon_3_small_muzzle_particle" keep_particle = yes sound = { soundeffect = artillery_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cannon_fire" } }
+	}
+}
+
+entity = {
+	name = "cannon_3_medium_muzzle_flash_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "cannon_3_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = artillery_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cannon_fire" } }
+	}
+}
+entity = {
+	name = "cannon_3_large_muzzle_flash_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "cannon_3_large_muzzle_particle" keep_particle = yes sound = { soundeffect = artillery_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cannon_fire" } }
+	}
+}
+
+# PROJECTILE
+
+entity = {
+	name = "cannon_3_large_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "cannon_3_large_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "cannon_3_large_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "cannon_3_medium_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "cannon_3_medium_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "cannon_3_medium_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "cannon_3_small_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "cannon_3_small_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "cannon_3_small_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+# HIT EFFECT
+
+entity = {
+	name = "cannon_3_small_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "cannon_3_small_hit_effect" sound = { soundeffect = cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cannon_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "cannon_3_medium_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "cannon_3_medium_hit_effect" sound = { soundeffect = cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cannon_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "cannon_3_large_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "cannon_3_large_hit_effect" sound = { soundeffect = cannon_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_cannon_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "cannon_3_small_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "cannon_3_small_hit_effect"  }
+		event = { time = 0.0 particle = "projectile_small_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "cannon_3_medium_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "cannon_3_medium_hit_effect" }
+		event = { time = 0.0 particle = "projectile_medium_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "cannon_3_large_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "cannon_3_large_hit_effect" }
+		event = { time = 0.0 particle = "projectile_large_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+##########
+# TITAN
+##########
+
+# MUZZLE FLASH
+
+entity = {
+	name = "reiker_cannon_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7.0 looping = no
+		event = { time = 0 particle = "reiker_cannon_muzzle_effect" keep_particle = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "reiker_cannon_fire" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_reiker_cannon_fire" } }
+	}
+}
+
+# HIT ENTITIES
+
+entity = {
+	name = "reiker_cannon_hit_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		start_event = { particle = "reiker_cannon_hit_effect" keep_particle = yes sound = { soundeffect = "reiker_cannon_hit" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_reiker_cannon_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "reiker_cannon_entity"
+	pdxmesh = "rieker_cannon_tracer_round_mesh"
+	
+	default_state = idle
+	state = { name = "idle"
+		#event = { time = 0 particle = "kinetic_artillery_idle_particle" keep_particle = yes }
+	}
+	
+	scale = 3
+}
+
+# SHIELD HIT ENTITIES
+
+entity = {
+	name = "reiker_cannon_shield_hit_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = "reiker_cannon_hit_effect" sound = { soundeffect = "shield_hit" } }
+		start_event = { particle = "titan_laser_shield_hit_effect" }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+
+####################
+# ABYSSAL FATHER   #
+####################
+
+entity = {
+	name = "abyssal_father_appendage_effect"
+	pdxmesh = "dimensional_horror_appendage_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "attack" looping = no
+		event = { time = 0 node = "portal_locator" particle = "dimensional_horror_appendage_effect" keep_particle = yes trigger_once = yes }
+		event = { sound = { soundeffect = "dimensional_horror_tentacle_attack" } }
+		event = { sound = { soundeffect = "distance_dimensional_horror_tentacle_attack" } }
+	}
+	scale = 0.3
+}
+
+entity = {
+	name = "abyssal_father_laser_hit_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { particle = "abyssal_father_titan_hit_effect" keep_particle = yes #sound = { soundeffect = titan_laser_hit }
+		}
+		#start_event = { trigger_once = yes sound = { soundeffect = "distance_tachyon_lance_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "abyssal_father_laser_shield_hit_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = "abyssal_father_titan_hit_effect" sound = { soundeffect = shield_hit } }
+		start_event = { particle = "titan_laser_shield_hit_effect" }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}

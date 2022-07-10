@@ -1,0 +1,23 @@
+###############
+# SOLAR STORM #
+###############
+
+soundeffect = {
+	name = event_ss_alert
+	sounds = {
+		sound = event_ss_alert_01
+	}  
+	volume = 0.5
+	max_audible = 1
+	max_audible_behaviour = fail		
+}
+
+soundeffect = {
+	name = abyssal_host_message
+	sounds = {
+		sound = abyssal_host_message_01
+	}  
+	volume = 0.5
+	max_audible = 1
+	max_audible_behaviour = fail		
+}

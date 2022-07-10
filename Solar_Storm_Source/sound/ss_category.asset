@@ -1,0 +1,87 @@
+###############
+# SOLAR STORM #
+###############
+
+
+
+################## Weapon #############################
+category = {
+ name = "Weapon"
+ soundeffects = {
+		####### WEAPONS
+	
+	####### CLOSE
+	
+	ss_ion_cannon_fire
+	ss_ion_cannon_hit
+	cruise_missile_fire
+	cruise_missile_hit
+	corvette_bomb_fire
+	corvette_bomb_hit
+	artillery_fire
+	cannon_hit
+	reiker_cannon_hit
+	reiker_cannon_fire
+	dark_matter_bomb_fire
+	warp_cannon_fire
+	warp_cannon_hit
+	abyssal_laser_fire
+	gravimetric_torpedo_fire
+	
+	####### FAR
+	
+	distance_ss_ion_cannon_fire
+	distance_ss_ion_cannon_hit
+	distance_cruise_missile_fire
+	distance_cruise_missile_hit
+	distance_corvette_bomb_fire
+	distance_corvette_bomb_hit
+	distance_cannon_fire
+	distance_cannon_hit
+	distance_reiker_cannon_hit
+	distance_reiker_cannon_fire
+	distance_dark_matter_bomb_fire
+	distance_warp_cannon_hit
+	distance_warp_cannon_fire
+	distance_abyssal_laser_fire
+	distance_gravimetric_torpedo_fire
+	
+	##### RELIC
+	
+	relic_activation_heart_of_creation
+ }
+  
+ compressor = 
+ {
+ enabled = yes
+ pregain = 8.0
+ postgain = -10.5
+ ratio = 10.0
+ threshold = -20.0
+ attacktime = 0.500
+ releasetime = 0.02
+ }
+}
+
+################## EFFECTS ########################
+
+category = {
+ name = "Effects"
+ soundeffects = {
+	
+	####### DEBUG
+	event_ss_alert
+	abyssal_host_message
+ }
+ 
+ compressor = 
+ {
+ enabled = yes
+ pregain = 2.0
+ postgain = 1.5
+ ratio = 10.0
+ threshold = -8.0
+ attacktime = 0.30
+ releasetime = 0.020
+ }
+}

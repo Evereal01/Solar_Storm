@@ -1,0 +1,23 @@
+music = {
+	name = "Riding the Hyperlanes"
+	file = "000000f1.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "Old Worlds"
+	file = "00000038.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "Dark Nebula"
+	file = "000000f0.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "Abyssal Secrets"
+	file = "too_many_secrets.ogg"
+	volume = 1.0
+}

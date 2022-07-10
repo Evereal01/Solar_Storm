@@ -1,0 +1,422 @@
+##############
+# SOLAR STORM
+##############
+
+
+sound =
+{
+	name = "ss_ion_cannon_fire_01"
+	file = "weapons/ion_cannon_fire_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "ss_ion_cannon_fire_02"
+	file = "weapons/ion_cannon_fire_02.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "ss_ion_cannon_fire_03"
+	file = "weapons/ion_cannon_fire_03.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "ss_ion_cannon_hit_01"
+	file = "weapons/ion_cannon_hit_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "ss_ion_cannon_hit_02"
+	file = "weapons/ion_cannon_hit_02.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "ss_ion_cannon_hit_03"
+	file = "weapons/ion_cannon_hit_03.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_ss_ion_cannon_fire_01"
+	file = "weapons/distance_ion_cannon_fire_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_ss_ion_cannon_fire_02"
+	file = "weapons/distance_ion_cannon_fire_02.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_ss_ion_cannon_fire_03"
+	file = "weapons/distance_ion_cannon_fire_03.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_ss_ion_cannon_hit_01"
+	file = "weapons/distance_ion_cannon_hit_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_ss_ion_cannon_hit_02"
+	file = "weapons/distance_ion_cannon_hit_02.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_ss_ion_cannon_hit_03"
+	file = "weapons/distance_ion_cannon_hit_03.wav"
+	volume = 0.8
+}
+
+sound =
+{
+	name = "cruise_missile_fire_01"
+	file = "weapons/cruise_missile_fire_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "cruise_missile_fire_02"
+	file = "weapons/cruise_missile_fire_02.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "cruise_missile_fire_03"
+	file = "weapons/cruise_missile_fire_03.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "cruise_missile_hit_01"
+	file = "weapons/cruise_missile_hit_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_cruise_missile_fire_01"
+	file = "weapons/distance_cruise_missile_fire_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_cruise_missile_fire_02"
+	file = "weapons/distance_cruise_missile_fire_02.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_cruise_missile_fire_03"
+	file = "weapons/distance_cruise_missile_fire_03.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_cruise_missile_hit_01"
+	file = "weapons/distance_cruise_missile_hit_01.wav"
+	volume = 0.8
+}
+
+### CORVETTE BOMBS
+
+sound =
+{
+	name = "corvette_bomb_fire_01"
+	file = "weapons/torpedo_fire_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "corvette_bomb_hit_01"
+	file = "weapons/big_explosion_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "corvette_bomb_hit_02"
+	file = "weapons/big_explosion_02.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "corvette_bomb_hit_03"
+	file = "weapons/big_explosion_03.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_corvette_bomb_fire_01"
+	file = "weapons/distance_torpedo_fire_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_corvette_bomb_hit_01"
+	file = "weapons/distance_big_explosion_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_corvette_bomb_hit_02"
+	file = "weapons/distance_big_explosion_02.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_corvette_bomb_hit_03"
+	file = "weapons/distance_big_explosion_03.wav"
+	volume = 0.8
+}
+
+### CANNONS
+
+sound =
+{
+	name = "artillery_fire_01"
+	file = "weapons/artillery_fire_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "artillery_fire_02"
+	file = "weapons/artillery_fire_02.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "artillery_fire_03"
+	file = "weapons/artillery_fire_03.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "artillery_fire_04"
+	file = "weapons/artillery_fire_04.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "artillery_fire_05"
+	file = "weapons/artillery_fire_05.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "artillery_fire_06"
+	file = "weapons/artillery_fire_06.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "artillery_hit_01"
+	file = "weapons/artillery_hit_02.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_artillery_fire_01"
+	file = "weapons/distance_artillery_fire_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_artillery_fire_02"
+	file = "weapons/distance_artillery_fire_02.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_artillery_fire_03"
+	file = "weapons/distance_artillery_fire_03.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_artillery_fire_04"
+	file = "weapons/distance_artillery_fire_04.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_artillery_fire_05"
+	file = "weapons/distance_artillery_fire_05.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_artillery_fire_06"
+	file = "weapons/distance_artillery_fire_06.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_artillery_hit_01"
+	file = "weapons/distance_artillery_hit_02.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "reiker_cannon_fire_01"
+	file = "weapons/rieker_cannon_fire_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "reiker_cannon_hit_01"
+	file = "weapons/rieker_cannon_hit_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_reiker_cannon_fire_01"
+	file = "weapons/distance_rieker_cannon_fire_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_reiker_cannon_hit_01"
+	file = "weapons/distance_rieker_cannon_hit_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "dark_matter_bomb_fire_01"
+	file = "weapons/dark_matter_bomb_fire_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_dark_matter_bomb_fire_01"
+	file = "weapons/distance_dark_matter_bomb_fire_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "event_ss_alert_01"
+	file = "event/event_ss_alert_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "warp_cannon_fire_01"
+	file = "weapons/warp_cannon_fire_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "warp_cannon_hit_01"
+	file = "weapons/warp_cannon_hit_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_warp_cannon_fire_01"
+	file = "weapons/distance_warp_cannon_fire_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_warp_cannon_hit_01"
+	file = "weapons/distance_warp_cannon_hit_01.wav"
+	volume = 0.8
+}
+
+sound =
+{
+	name = "abyssal_laser_fire_01"
+	file = "weapons/abyssal_laser_fire_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "abyssal_laser_fire_02"
+	file = "weapons/abyssal_laser_fire_02.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "abyssal_laser_fire_03"
+	file = "weapons/abyssal_laser_fire_03.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_abyssal_laser_fire_01"
+	file = "weapons/distance_abyssal_laser_fire_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_abyssal_laser_fire_02"
+	file = "weapons/distance_abyssal_laser_fire_02.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_abyssal_laser_fire_03"
+	file = "weapons/distance_abyssal_laser_fire_03.wav"
+	volume = 0.8
+}
+
+sound =
+{
+	name = "gravimetric_torpedo_fire_01"
+	file = "weapons/gravimetric_torpedo_fire_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "gravimetric_torpedo_fire_02"
+	file = "weapons/gravimetric_torpedo_fire_02.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "gravimetric_torpedo_fire_03"
+	file = "weapons/gravimetric_torpedo_fire_03.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_gravimetric_torpedo_fire_01"
+	file = "weapons/distance_gravimetric_torpedo_fire_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_gravimetric_torpedo_fire_02"
+	file = "weapons/distance_gravimetric_torpedo_fire_02.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_gravimetric_torpedo_fire_03"
+	file = "weapons/distance_gravimetric_torpedo_fire_03.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "abyssal_host_message_01"
+	file = "event/abyssal_host_message.wav"
+	volume = 0.8
+}
+
+
+######### RELIC
+
+
+sound = 
+{
+    name = "sfx_relic_activation_heart_of_creation"
+    file = "event/sfx_relic_activation_heart_of_creation.wav"
+    volume = 1
+}
+

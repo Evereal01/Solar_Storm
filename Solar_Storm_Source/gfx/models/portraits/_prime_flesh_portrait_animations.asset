@@ -1,0 +1,4 @@
+	animation = {
+		name = "ss_prime_flesh_portrait_animation"
+		file = "ss_pf_portrait_idle.anim"
+	}

@@ -1,0 +1,71 @@
+#####    Stars    ######
+entity = { 
+	name = "ss_star_shockwave_entity"
+	pdxmesh = "system_plane_collision_mesh"
+	
+	default_state = "explode"
+	state = { name = "explode" state_time = 30 looping = no 
+		event = { time = 0.0 	particle = "ss_star_explosion_shockwave_effect"  keep_particle = yes trigger_once = no }
+		event = { trigger_once = yes sound = { soundeffect = "sfx_star_eater_weapon_hit" } }	
+		event = { trigger_once = yes sound = { soundeffect = "sfx_star_eater_weapon_hit_distance" } }
+	}
+
+	scale = 15
+}
+
+entity = {
+	name = "ss_abyssal_black_hole_entity"
+	pdxmesh = "ss_abyssal_black_hole_new_mesh"
+	
+	scale = 1
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 particle = "ss_abyssal_black_hole_particle" trigger_once = yes keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "blackhole_hum_idle" } }
+	}
+	locator = { name = "planet" }
+	attach = { "planet" = "ss_abyssal_black_hole_rings_entity" }
+	attach = { "planet" = "ss_abyssal_black_hole_grav_lens_entity" }
+	attach = { "planet" = "black_hole_grav_animation_entity" }
+	
+	game_data = {
+		size = 1.0
+		bloom_factor = 5
+	}
+}
+
+entity = { 
+	name = "ss_abyssal_black_hole_rings_entity"
+	pdxmesh = "ss_abyssal_black_hole_rings_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+	#	event = { time = 0.0 node = "polar_effect_1" particle = "pulsar_star_outburst_effect"  keep_particle = no trigger_once = yes  sound = { soundeffect = "pulsar_star_idle_hum" } }
+	#	event = { time = 0.0 node = "polar_effect_2" particle = "pulsar_star_outburst_effect"  keep_particle = no trigger_once = yes }
+	}
+	
+	scale = 2.0
+	
+	game_data = {
+		uv_animation_speed   = -0.025
+		uv_animation_direction  = { 0.4 0.4 }
+	}	
+}
+
+entity = { 
+	name = "ss_abyssal_black_hole_grav_lens_entity"
+	pdxmesh = "ss_abyssal_black_hole_grav_lens_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+	#	event = { time = 0.0 node = "polar_effect_1" particle = "pulsar_star_outburst_effect"  keep_particle = no trigger_once = yes  sound = { soundeffect = "pulsar_star_idle_hum" } }
+	#	event = { time = 0.0 node = "polar_effect_2" particle = "pulsar_star_outburst_effect"  keep_particle = no trigger_once = yes }
+	}
+	
+	scale = 2.0
+	
+	#game_data = {
+	#	uv_animation_speed   = -0.2
+	#	uv_animation_direction  = { 0.4 0.4 }
+	#}	
+}

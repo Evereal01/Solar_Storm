@@ -1,0 +1,4 @@
+	animation = {
+		name = "ss_father_portrait_animation"
+		file = "ss_father_anim.anim"
+	}
