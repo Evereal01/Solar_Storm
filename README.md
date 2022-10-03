@@ -4,8 +4,8 @@ A gameplay/story mod for the video game Stellaris by Paradox Interactive.
 Solar Storm is a gameplay and story mod for the video game Stellaris. It primarily features the following:
 
 30+ Ascension perks focused on specific playstyles.
-1 Story-focused crisis
-Various extra features
+1 Story-focused crisis.
+Various extra features.
 
 To use Solar Storm in your Stellaris game, please subscribe to it from the Steam workshop page found here: 
 https://steamcommunity.com/sharedfiles/filedetails/?id=2536609215
@@ -19,4 +19,5 @@ Solar Storm is undergoing active development and input from the community is mos
 Feel free to leave a comment in the Steam Workshop page, an Issue in this repository, or contact me on Discord (Evereal#9832).
 
 Thank you for playing my mod.
+
 -Evereal
