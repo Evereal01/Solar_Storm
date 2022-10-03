@@ -1753,11 +1753,11 @@ country_event = {
 	immediate = {
 		set_variable = { which = ss_political_game_improve_rel_num value = 0 }
 		export_trigger_value_to_variable = { trigger = num_envoys_to_galcom variable = ss_political_game_num }
-		add_modifier = {
-			modifier = ss_ap_xenophile_political_game_1
-			days = 150
-			multiplier = ss_political_game_num
-		}
+		#add_modifier = {
+		#	modifier = ss_ap_xenophile_political_game_1
+		#	days = 150
+		#	multiplier = ss_political_game_num
+		#}
 		every_envoy = {
 			limit = {
 				has_envoy_task = { task = improve_relations }
@@ -2008,12 +2008,10 @@ country_event = {
 			}
 			set_variable = { which = ss_future_artifacts_stock value = 250 }
 		}
-		capital_scope = {
-			add_modifier = {
-				modifier = ss_ap_materialist_future_seekers_artifacts
-				multiplier = root.ss_future_artifacts_stock
-				days = 150
-			}
+		add_modifier = {
+			modifier = ss_ap_materialist_future_seekers_artifacts
+			multiplier = root.ss_future_artifacts_stock
+			days = 150
 		}
 		country_event = { id = ssmisc.130 days = 150 }
 	}
@@ -2296,8 +2294,10 @@ country_event = {
 			modifier = ss_ap_weapon_specialisation_energy
 			days = -1
 		}
-		add_research_option = tech_ion_cannon_1
-		add_research_option = tech_dark_matter_bomb
+		add_research_option = tech_ss_ion_cannon_1
+		add_research_option = tech_ss_particle_beam_1
+		#add_research_option = tech_gravimetric_weapons
+		add_research_option = tech_fleet_strength_parts
     }
 	option = {
         name = ssmisc.144.b
@@ -2305,8 +2305,10 @@ country_event = {
 			modifier = ss_ap_weapon_specialisation_kinetic
 			days = -1
 		}
-		add_research_option = tech_cannons_1 
-		add_research_option = tech_warp_cannon
+		add_research_option = tech_ss_artillery_1 
+		add_research_option = tech_ss_flechette_1
+		add_research_option = tech_ss_phase_1
+		add_research_option = tech_fleet_strength_parts
     }
 	option = {
         name = ssmisc.144.c
@@ -2314,9 +2316,10 @@ country_event = {
 			modifier = ss_ap_weapon_specialisation_missile
 			days = -1
 		}
-		add_research_option = tech_cruise_missiles_1 
+		add_research_option = tech_ss_cruise_missiles_1
 		add_research_option = tech_corvette_bomb
-		add_research_option = tech_emp_torpedo
+		add_research_option = tech_ss_stealth_torpedo_1
+		add_research_option = tech_fleet_strength_parts
     }
 }
 

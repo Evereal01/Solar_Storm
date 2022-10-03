@@ -230,7 +230,6 @@ building_intelligence_office = {
 
 	allow = {
 		has_major_upgraded_capital = yes
-		buildings_simple_allow = yes
 	}
 
 	destroy_trigger = {
@@ -575,7 +574,6 @@ building_ss_ap_bazaar = {
 			owner = { is_regular_empire = no }
 			has_modifier = slave_colony
 			has_modifier = resort_colony
-			buildings_no_crystals = yes
 		}
 	}
 	

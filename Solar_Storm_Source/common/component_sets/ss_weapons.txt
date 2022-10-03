@@ -130,3 +130,93 @@ component_set = {
 	icon = "GFX_ship_part_warp_cannon"
 	icon_frame = 1	
 }
+
+############
+# Artillery
+############
+
+component_set = {
+	key = "SS_ARTILLERY_1"
+	
+	icon = "GFX_ship_part_ss_artillery_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SS_ARTILLERY_2"
+	
+	icon = "GFX_ship_part_ss_artillery_2"
+	icon_frame = 1
+}
+
+############
+# Flechette
+############
+
+component_set = {
+	key = "SS_FLECHETTE_1"
+	
+	icon = "GFX_ship_part_ss_flechette_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SS_FLECHETTE_2"
+	
+	icon = "GFX_ship_part_ss_flechette_2"
+	icon_frame = 1
+}
+
+##################
+# Phase Cannons
+##################
+
+component_set = {
+	key = "SS_PHASE_1"
+	
+	icon = "GFX_ship_part_ss_phase_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SS_PHASE_2"
+	
+	icon = "GFX_ship_part_ss_phase_2"
+	icon_frame = 1
+}
+
+##################
+# Particle Beams
+##################
+
+component_set = {
+	key = "SS_PARTICLE_BEAM_1"
+	
+	icon = "GFX_ship_part_ss_particle_beam_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SS_PARTICLE_BEAM_2"
+	
+	icon = "GFX_ship_part_ss_particle_beam_2"
+	icon_frame = 1
+}
+
+##################
+# STEALTH MISSILES
+##################
+
+component_set = {
+	key = "SS_STEALTH_TORPEDO_1"
+	
+	icon = "GFX_ship_part_ss_stealth_missile_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SS_STEALTH_TORPEDO_2"
+	
+	icon = "GFX_ship_part_ss_stealth_missile_2"
+	icon_frame = 1
+}

@@ -260,6 +260,112 @@ spriteTypes = {
 	}
 	
 	#############
+	# NEW WEAPONS
+	#############
+	
+	spriteType = {
+		name = "GFX_ship_part_ss_artillery_1"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ss_artillery_1.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_ss_artillery_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ss_artillery_2.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_ss_artillery_3"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ss_artillery_3.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_ss_artillery_4"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ss_artillery_4.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_ss_artillery_5"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ss_artillery_5.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_ss_flechette_1"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ss_flechette_1.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_ss_flechette_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ss_flechette_2.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_ss_flechette_3"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ss_flechette_3.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_ss_phase_1"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ss_phase_1.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_ss_phase_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ss_phase_2.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_ss_particle_beam_1"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ss_particle_beam_1.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_ss_particle_beam_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ss_particle_beam_2.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_ss_particle_beam_3"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ss_particle_beam_3.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_ss_particle_beam_4"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ss_particle_beam_4.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_ss_stealth_missile_1"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ss_stealth_missile_1.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_ss_stealth_missile_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ss_stealth_missile_2.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_ss_stealth_missile_3"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ss_stealth_missile_3.dds"
+		noOfFrames = 1
+	}
+	
+	#############
 	# UI
 	#############
 	

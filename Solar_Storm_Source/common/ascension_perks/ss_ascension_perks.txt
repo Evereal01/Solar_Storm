@@ -24,6 +24,7 @@ ap_fleet_strength = {
 		NOT = {
 			has_ascension_perk = ap_fleet_strength
 		}
+		has_country_flag = ss_ap_fleet_strength_permitted
 	}
 	
 
@@ -207,6 +208,7 @@ ap_galactic_secrets_I = {
 		NOT = {
 			has_ascension_perk = ap_galactic_secrets_I
 		}
+		has_country_flag = ss_ap_galactic_secrets_I_permitted
 	}
 	
 	ai_weight = {
@@ -242,8 +244,8 @@ ap_galactic_secrets_II = {
 	
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_ap_galactic_secrets_I"
-			has_ascension_perk = ap_galactic_secrets_I
+			fail_text = "requires_ascension_perks_1"
+			num_ascension_perks > 0
 		}
 	}
 	
@@ -1067,6 +1069,7 @@ ap_xenophile_political_game = {
 		hidden_effect = {
 			country_event = { id = ssmisc.120 }
 		}
+		
 	}
 	possible = {
 		custom_tooltip = {
@@ -1080,6 +1083,7 @@ ap_xenophile_political_game = {
 
 	modifier = {
 		envoys_add = 2
+		diplo_weight_envoys_mult = 0.05
 	}
 
 	potential = {
@@ -1883,7 +1887,6 @@ ap_ss_weapon_specialisation = {
 		NOT = {
 			has_ascension_perk = ap_ss_weapon_specialisation
 		}
-		has_country_flag = ss_ap_weapon_specialisation_permitted
 	}
 
 	ai_weight = {

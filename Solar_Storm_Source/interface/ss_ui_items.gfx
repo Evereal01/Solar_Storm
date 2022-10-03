@@ -355,4 +355,102 @@ spriteTypes = {
 	spriteType = { name = "GFX_ss_pf_temp_bonus_on" texturefile = "gfx/interface/UI/pf_interface/appeasement_icons/ss_pf_temp_bonus_on.dds" }
 	spriteType = { name = "GFX_ss_pf_temp_bonus_off" texturefile = "gfx/interface/UI/pf_interface/appeasement_icons/ss_pf_temp_bonus_off.dds" }
 	
+	#####################
+	# ABYSSAL FATHER UI #
+	#####################
+	
+	spriteType = {
+		name = "GFX_event_button_452_ss_red"
+		texturefile = "gfx/interface/UI/ab_interface/button_452_animated_ss_red.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/buttons/button_452_animated_mask.dds"
+			animationtexturefile = "gfx/interface/buttons/button_452_animated_texture.dds"
+			animationrotation = 180.0
+			animationlooping = yes
+			animationtime = 180.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	
+	corneredTileSpriteType = {
+		name = "GFX_tile_large_bg_ss_red"
+		textureFile = "gfx/interface/UI/ab_interface/ss_red_tile_large_bg.dds"
+		borderSize = { x=330 y=296 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_hex_bg_ss_red"
+		textureFile = "gfx/interface/UI/ab_interface/ss_red_planet_view_hex_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_line_long_ss_red"
+		textureFile = "gfx/interface/UI/ab_interface/ss_red_line_long.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_fleetview_focus_ss_red"
+		texturefile = "gfx/interface/UI/ab_interface/fleet_action_button_focus_on_ss_red.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/fleet_view/standard_button_mask.dds"
+			animationtexturefile = "gfx/interface/fleet_view/standard_button_texture.dds"
+			animationrotation = 180.0
+			animationlooping = yes
+			animationtime = 12.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	
+	spriteType = {
+		name = "GFX_main_close_button_ss_red"
+		texturefile = "gfx/interface/UI/ab_interface/close_button_ss_red.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/buttons/close_button_mask.dds"
+			animationtexturefile = "gfx/interface/buttons/close_texture.dds"
+			animationrotation = 180.0
+			animationlooping = yes
+			animationtime = 12.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+			animationframes = { 1 2 3 }
+		}
+	}
+	
+	spriteType = {
+		name = "GFX_diplomacy_portrait_frame_ss_red"
+		textureFile = "gfx/interface/UI/ab_interface/ss_red_diplomacy_portrait_frame.dds"
+	}
+	
+	flagSpriteType = {
+		name = "GFX_empire_flag_128_ss_red"
+		textureFile = "gfx/interface/UI/ab_interface/empire_flag_128_frame_ss_red.dds"		#this one will determine the size of the sprite
+		masking_texture = "gfx/interface/flags/empire_flag_128_mask.dds"
+		effectFile = "gfx/FX/flag_sprite.shader"
+		noOfFrames = 1
+		
+		bg_position = { x = 10 y = 10 }
+		bg_size = { width = 111 height = 111 }
+		symbol_position = { x = 24 y = 24 }
+		symbol_size = { width = 83 height = 83 }
+	}
 }

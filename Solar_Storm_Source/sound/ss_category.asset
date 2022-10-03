@@ -27,6 +27,10 @@ category = {
 	warp_cannon_hit
 	abyssal_laser_fire
 	gravimetric_torpedo_fire
+	ss_stealth_torpedo_fire
+	ss_flechette_fire
+	ss_flechette_hit
+	ss_flechette_alt_hit
 	
 	####### FAR
 	
@@ -45,6 +49,10 @@ category = {
 	distance_warp_cannon_fire
 	distance_abyssal_laser_fire
 	distance_gravimetric_torpedo_fire
+	distance_ss_stealth_torpedo_fire
+	distance_ss_flechette_fire
+	distance_ss_flechette_hit
+	distance_ss_flechette_alt_hit
 	
 	##### RELIC
 	

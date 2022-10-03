@@ -1,0 +1,104 @@
+###############
+# SOLAR STORM
+###############
+
+#############
+# PROJECTILE
+#############
+
+
+weapon_component_template = {
+	key = "SS_STEALTH_TORPEDO_1"
+	size = torpedo
+	entity = "turret_torpedo_entity"
+	
+	icon = "GFX_ship_part_ss_stealth_missile_1"
+	icon_frame = 1
+	type = missile
+
+	power = -24
+	damage = { min = 150 max = 225 }
+
+	hull_damage = @ss_cruise_missile_hull_damage 
+	shield_damage = @ss_cruise_missile_shield_damage 
+	shield_penetration = @ss_cruise_missile_shield_penetration 
+	armor_damage = @ss_cruise_missile_armor_damage 
+	armor_penetration = @ss_cruise_missile_armor_penetration 
+
+	windup = { min = 1 max = 18 }
+	total_fire_time = 200
+	range = 150
+	accuracy = 1.0
+	tracking = 0.25
+
+	missile_speed = 26
+	missile_evasion = 0.95
+	missile_health = 12
+	missile_retarget_range = 100
+	
+	prerequisites = { "tech_ss_stealth_torpedo_1" }
+	component_set = "SS_STEALTH_TORPEDO_1"
+	projectile_gfx = "ss_stealth_torpedo"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_shield }
+	upgrades_to = "SS_STEALTH_TORPEDO_2"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t4_cost
+			volatile_motes = @m_t4_rare
+		}		
+		upkeep = {
+			energy = @m_t4_upkeep_energy
+			alloys = @m_t4_upkeep_alloys
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "SS_STEALTH_TORPEDO_2"
+	size = torpedo
+	entity = "turret_torpedo_entity"
+	
+	icon = "GFX_ship_part_ss_stealth_missile_2"
+	icon_frame = 1
+	type = missile
+
+	power = -30
+	damage = { min = 195 max = 293 }
+
+	hull_damage = @ss_cruise_missile_hull_damage 
+	shield_damage = @ss_cruise_missile_shield_damage 
+	shield_penetration = @ss_cruise_missile_shield_penetration 
+	armor_damage = @ss_cruise_missile_armor_damage 
+	armor_penetration = @ss_cruise_missile_armor_penetration 
+
+	windup = { min = 1 max = 18 }
+	total_fire_time = 200
+	range = 150
+	accuracy = 1.0
+	tracking = 0.25
+
+	missile_speed = 26
+	missile_evasion = 0.95
+	missile_health = 12
+	missile_retarget_range = 100
+	
+	prerequisites = { "tech_ss_stealth_torpedo_2" }
+	component_set = "SS_STEALTH_TORPEDO_2"
+	projectile_gfx = "ss_stealth_torpedo"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_shield }
+	upgrades_to = "SS_STEALTH_TORPEDO_3"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t5_cost
+			volatile_motes = @m_t5_rare
+		}		
+		upkeep = {
+			energy = @m_t5_upkeep_energy
+			alloys = @m_t5_upkeep_alloys
+		}
+	}
+}

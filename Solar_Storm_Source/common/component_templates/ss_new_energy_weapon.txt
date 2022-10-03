@@ -1,0 +1,110 @@
+###############
+# SOLAR STORM
+###############
+
+#############
+# PROJECTILE
+#############
+
+weapon_component_template = {
+	key = "SS_PARTICLE_BEAM_1"
+	
+	size = large
+	type = instant
+	
+	icon = "GFX_ship_part_ss_particle_beam_1"
+	icon_frame = 1
+	
+	power = -70
+	damage = { min = 360 max = 800 }
+
+	hull_damage = @ss_particle_beam_hull_damage 
+	shield_damage = @ss_particle_beam_shield_damage 
+	shield_penetration = @ss_particle_beam_shield_penetration 
+	armor_damage = @ss_particle_beam_armor_damage 
+	armor_penetration = @ss_particle_beam_armor_penetration  
+
+	windup = { min = 3 max = 25 }
+	total_fire_time = 120
+	range = 135
+	accuracy = 0.9
+	tracking = 0.0
+	
+	prerequisites = { "tech_ss_particle_beam_1" }
+	component_set = "SS_PARTICLE_BEAM_1"
+	
+	projectile_gfx = "ss_particle_beam_1"
+	tags = { weapon_type_energy }
+	upgrades_to = "SS_PARTICLE_BEAM_2"
+	ai_tags = { weapon_role_anti_armor }	#tags must be pre-registered in common/weapon_tags
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t5_cost
+			exotic_gases = @l_t5_rare
+		}
+		upkeep = {
+			energy = @l_t5_upkeep_energy
+			alloys = @l_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = exotic_gases }
+		}
+	}
+}
+weapon_component_template = {
+	key = "SS_PARTICLE_BEAM_2"
+	
+	size = large
+	type = instant
+	
+	icon = "GFX_ship_part_ss_particle_beam_2"
+	icon_frame = 1
+	
+	power = -90
+	damage = { min = 468 max = 1040 }
+
+	hull_damage = @ss_particle_beam_hull_damage 
+	shield_damage = @ss_particle_beam_shield_damage 
+	shield_penetration = @ss_particle_beam_shield_penetration 
+	armor_damage = @ss_particle_beam_armor_damage 
+	armor_penetration = @ss_particle_beam_armor_penetration  
+
+	windup = { min = 3 max = 25 }
+	total_fire_time = 120
+	range = 135
+	accuracy = 0.9
+	tracking = 0.0
+	
+	prerequisites = { "tech_ss_particle_beam_2" }
+	component_set = "SS_PARTICLE_BEAM_2"
+	
+	projectile_gfx = "ss_particle_beam_2"
+	tags = { weapon_type_energy }
+	upgrades_to = "SS_PARTICLE_BEAM_3"
+	ai_tags = { weapon_role_anti_armor }	#tags must be pre-registered in common/weapon_tags
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t6_cost
+			exotic_gases = @l_t6_rare
+		}
+		upkeep = {
+			energy = @l_t6_upkeep_energy
+			alloys = @l_t6_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = exotic_gases }
+		}
+	}
+}

@@ -10,10 +10,10 @@
 @ss_cannons_armor_damage = 0.5
 @ss_cannons_armor_penetration = 0
 
-@ss_cruise_missile_hull_damage = 1
+@ss_cruise_missile_hull_damage = 1.5
 @ss_cruise_missile_shield_damage = 1
 @ss_cruise_missile_shield_penetration = 1
-@ss_cruise_missile_armor_damage = 1.75
+@ss_cruise_missile_armor_damage = 1
 @ss_cruise_missile_armor_penetration = 0
 
 @ss_ion_cannon_hull_damage = 1
@@ -21,3 +21,27 @@
 @ss_ion_cannon_shield_penetration = 0
 @ss_ion_cannon_armor_damage = 0.5
 @ss_ion_cannon_armor_penetration = 0
+
+@ss_artillery_hull_damage = 1.25
+@ss_artillery_shield_damage = 2.5
+@ss_artillery_shield_penetration = 0
+@ss_artillery_armor_damage = 0.5
+@ss_artillery_armor_penetration = 0
+
+@ss_flechette_hull_damage = 1.0
+@ss_flechette_shield_damage = 0.5
+@ss_flechette_shield_penetration = 0
+@ss_flechette_armor_damage = 1.5
+@ss_flechette_armor_penetration = 0
+
+@ss_phase_hull_damage = 1.0
+@ss_phase_shield_damage = 1.0
+@ss_phase_shield_penetration = 1.0
+@ss_phase_armor_damage = 1.0
+@ss_phase_armor_penetration = 0.25
+
+@ss_particle_beam_hull_damage = 1.75
+@ss_particle_beam_shield_damage = 0.5
+@ss_particle_beam_shield_penetration = 0
+@ss_particle_beam_armor_damage = 1.75
+@ss_particle_beam_armor_penetration = 0

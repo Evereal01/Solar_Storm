@@ -271,7 +271,7 @@ ss_ap_authoritarian_imperium_1 = {
 }
 
 ss_ap_xenophile_political_game_1 = {
-	diplo_weight_mult = 0.10
+	country_base_unity_produces_add = 5
 }
 ss_ap_xenophile_political_game_2 = {
 	trade_value_mult = 0.04
@@ -312,9 +312,9 @@ ss_ap_materialist_future_seekers = {
 }
 
 ss_ap_materialist_future_seekers_artifacts = {
-	planet_cosmologists_physics_research_produces_add = 0.2
-	planet_cosmologists_society_research_produces_add = 0.2
-	planet_cosmologists_engineering_research_produces_add = 0.2
+	country_base_physics_research_produces_add = 0.4
+	country_base_society_research_produces_add = 0.4
+	country_base_engineering_research_produces_add = 0.4
 }
 
 ss_ap_materialist_partners_1 = {

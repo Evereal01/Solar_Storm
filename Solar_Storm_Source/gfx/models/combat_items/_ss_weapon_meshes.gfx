@@ -32,6 +32,16 @@ objectTypes = {
 	}
 	
 	pdxmesh = {
+		name = "ss_flechette_proj_mesh"
+		file = "gfx/models/combat_items/SS_flechette_projectile.mesh"
+		scale = 1.00
+		
+		meshsettings = {
+		texture_diffuse = "ss_flechette_tracer_round.dds"
+		}
+	}
+	
+	pdxmesh = {
 		name = "ss_gravimetric_torpedo_mesh"
 		file = "gfx/models/combat_items/arthropoid_01_missile_medium.mesh"
 		scale = 0.05

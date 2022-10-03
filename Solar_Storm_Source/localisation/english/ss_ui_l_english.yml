@@ -14,7 +14,7 @@
  ss_ui.1.text: "Test text description goes here."
  ss_hard_button: "Hard mode increases the strength of crisis fleets (on top of the normal crisis multiplier), makes crises progress quicker and adds additional negative events.\n\n§YBest suited for experienced players or heavily modded playthroughs.§!"
  ss_normal_button: "Normal mode involves smaller fleets and slower crises.\n\n§YBest suited for lightly modded playthroughs similar to base Stellaris."
- ss_main_desc: "§YSolar Storm V1.1 P5 (30th May 2022) Crisis Settings§!\nPlease report any bugs you encounter on the steam workshop page."
+ ss_main_desc: "§YSolar Storm V1.2 P1 (2nd October 2022) Crisis Settings§!\nPlease report any bugs you encounter on the steam workshop page."
  
  ss_AS_switch_container_01: "Gestalt Override"
  ss_AS_switch_container_02: "Randomly Roll Crisis Tech"
@@ -31,7 +31,7 @@
  ss_AS_gestalt_tooltip: "Allows Gestalt Empires to activate the Abyssal Secrets crisis.\n\n§YWARNING: The localisation and modifiers are not adjusted for gestalts, leading to immersion breaking events. This may be solved in the future.§!"
  ss_hard_mode_tooltip: "Hard mode increases the strength of crisis fleets (on top of the normal crisis multiplier), makes crises progress quicker and adds additional negative events."
  ss_normal_mode_tooltip: "Normal mode involves smaller fleets and slower crises.\n§YBest suited for lightly modded playthroughs similar to base Stellaris."
- ss_AS_show_tooltip: "Toggles whether you can naturally roll the §YQuantanium Synthesization§! technology in the tech tree required to trigger the crisis.\n\n§YWARNING: If disabled, you will need the Galactic Secrets II ascension perk to activate the crisis.§!"
+ ss_AS_show_tooltip: "Toggles whether you can naturally roll the §YQuantanium Synthesization§! technology in the tech tree required to trigger the crisis.\n\n§YWARNING: If disabled, you will need the Abyssal Secrets ascension perk to activate the crisis.§!"
  ss_AS_enable_tooltip: "Allows the Abyssal Secrets crisis to trigger."
  
  ss_AS_strength_1_tooltip: "Applies an additional §G-75%§! shield hit point and §G-37.5%§! weapon damage penalty to crisis fleets.\n§YStacks on top of the existing crisis strength modifier.§!"

@@ -169,7 +169,7 @@ tech_muonic_hydrogen_engines = {
 # ##################
 
 #Cruise Missiles 1
-tech_cruise_missiles_1 = {
+tech_ss_cruise_missiles_1 = {
 	area = engineering
 	cost = @tier2cost3
 	tier = 2
@@ -202,13 +202,13 @@ tech_cruise_missiles_1 = {
 }
 
 #Armored Torpedoes
-tech_cruise_missiles_2 = {
+tech_ss_cruise_missiles_2 = {
 	area = engineering
 	cost = @tier3cost3
 	tier = 3
 	category = { propulsion }
 	ai_update_type = military
-	prerequisites = { "tech_cruise_missiles_1" }
+	prerequisites = { "tech_ss_cruise_missiles_1" }
 	weight = @tier3weight3
 	
 	weight_modifier = {
@@ -250,13 +250,13 @@ tech_cruise_missiles_2 = {
 }
 
 #Devastator Torpedoes
-tech_cruise_missiles_3 = {
+tech_ss_cruise_missiles_3 = {
 	area = engineering
 	cost = @tier4cost3
 	tier = 4
 	category = { propulsion }
 	ai_update_type = military
-	prerequisites = { "tech_cruise_missiles_2" }
+	prerequisites = { "tech_ss_cruise_missiles_2" }
 	weight = @tier4weight3
 	
 	weight_modifier = {
@@ -517,7 +517,7 @@ tech_warp_cannon = {
 # Ion Cannons
 # ##################
 
-tech_ion_cannon_1 = {
+tech_ss_ion_cannon_1 = {
 	area = physics
 	cost = @tier2cost3
 	tier = 2
@@ -550,13 +550,13 @@ tech_ion_cannon_1 = {
 	}
 }
 
-tech_ion_cannon_2 = {
+tech_ss_ion_cannon_2 = {
 	area = physics
 	cost = @tier3cost2
 	tier = 3
 	category = { particles }
 	ai_update_type = military
-	prerequisites = { "tech_ion_cannon_1" }
+	prerequisites = { "tech_ss_ion_cannon_1" }
 	weight = @tier3weight2
 	
 	weight_modifier = {
@@ -597,13 +597,13 @@ tech_ion_cannon_2 = {
 	}
 }
 
-tech_ion_cannon_3 = {
+tech_ss_ion_cannon_3 = {
 	area = physics
 	cost = @tier4cost2
 	tier = 4
 	category = { particles }
 	ai_update_type = military	
-	prerequisites = { "tech_ion_cannon_2" }
+	prerequisites = { "tech_ss_ion_cannon_2" }
 	weight = @tier4weight2
 	
 	weight_modifier = {

@@ -410,6 +410,119 @@ sound =
 }
 
 
+sound =
+{
+	name = "ss_flechette_fire_01"
+	file = "weapons/ss_flechette_alt_fire_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "ss_flechette_fire_02"
+	file = "weapons/ss_flechette_alt_fire_02.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "ss_flechette_fire_03"
+	file = "weapons/ss_flechette_alt_fire_03.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_ss_flechette_fire_01"
+	file = "weapons/distance_ss_flechette_alt_fire_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_ss_flechette_fire_02"
+	file = "weapons/distance_ss_flechette_alt_fire_02.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_ss_flechette_fire_03"
+	file = "weapons/distance_ss_flechette_alt_fire_03.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "ss_flechette_hit_01"
+	file = "weapons/ss_flechette_alt_hit_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "ss_flechette_hit_02"
+	file = "weapons/ss_flechette_alt_hit_02.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_ss_flechette_hit_01"
+	file = "weapons/distance_ss_flechette_alt_hit_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_ss_flechette_hit_02"
+	file = "weapons/distance_ss_flechette_alt_hit_02.wav"
+	volume = 0.8
+}
+
+
+sound =
+{
+	name = "ss_flechette_alt_2_hit_01"
+	file = "weapons/ss_flechette_alt_2_hit_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "ss_flechette_alt_2_hit_02"
+	file = "weapons/ss_flechette_alt_2_hit_02.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_ss_flechette_alt_2_hit_01"
+	file = "weapons/distance_ss_flechette_alt_2_hit_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_ss_flechette_alt_2_hit_02"
+	file = "weapons/distance_ss_flechette_alt_2_hit_02.wav"
+	volume = 0.8
+}
+
+
+sound =
+{
+	name = "ss_stealth_torpedo_fire_01"
+	file = "weapons/ss_stealth_torpedo_fire_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "ss_stealth_torpedo_fire_02"
+	file = "weapons/ss_stealth_torpedo_fire_02.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_ss_stealth_torpedo_fire_01"
+	file = "weapons/distance_ss_stealth_torpedo_fire_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_ss_stealth_torpedo_fire_02"
+	file = "weapons/distance_ss_stealth_torpedo_fire_02.wav"
+	volume = 0.8
+}
+
 ######### RELIC
 
 

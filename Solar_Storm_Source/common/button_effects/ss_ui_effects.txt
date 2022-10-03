@@ -956,7 +956,7 @@ ss_pf_indicator_ap_genetic_on = {
 	allow = { always = yes } effect = { custom_tooltip = "ss_pf_indicator_ap_genetic_tooltip" }
 }
 ss_pf_indicator_ap_genetic_off = {
-	potential = { exists = from from = { NOT = { has_ethic = ap_engineered_evolution } } }
+	potential = { exists = from from = { NOT = { has_ascension_perk = ap_engineered_evolution } } }
 	allow = { always = yes } effect = { custom_tooltip = "ss_pf_indicator_ap_genetic_tooltip" }
 }
 ss_pf_indicator_ally_on = {
